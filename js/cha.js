@@ -59,9 +59,7 @@ window.onload = function() {
                         <div class="d-flex w-100 justify-content-between">
                           <small class="mb-1 text-white">Created</small>
                           <small class="mb-1 text-warning">${new Date(
-                            item.created).getMonth()}, ${new Date(
-                              item.created).getDay()} ${new Date(
-                                item.created).getFullYear()}</small>
+                                item.created).toDateString()}</small>
                         </div>
                       </div>
 
@@ -166,9 +164,7 @@ function getNext(url) {
                       <div class="d-flex w-100 justify-content-between">
                         <small class="mb-1 text-white">Created</small>
                         <small class="mb-1 text-warning">${new Date(
-                          item.created).getMonth()}, ${new Date(
-                            item.created).getDay()} ${new Date(
-                              item.created).getFullYear()}</small>
+                              item.created).toDateString()}</small>
                       </div>
                     </div>
 
@@ -271,9 +267,7 @@ function getPrev(url) {
                       <div class="d-flex w-100 justify-content-between">
                         <small class="mb-1 text-white">Created</small>
                         <small class="mb-1 text-warning">${new Date(
-                          item.created).getMonth()}, ${new Date(
-                            item.created).getDay()} ${new Date(
-                              item.created).getFullYear()}</small>
+                              item.created).toDateString()}</small>
                       </div>
                     </div>
 

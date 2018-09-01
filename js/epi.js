@@ -19,7 +19,8 @@ window.onload = function() {
                 <div href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark">
                   <div class="d-flex w-100 justify-content-between">
                     <small class="mb-1 text-white">Date Released</small>
-                    <small class="mb-1 text-warning">${item.air_date}</small>
+                    <small class="mb-1 text-warning">${new Date(
+                          item.air_date).toDateString()}</small>
                   </div>
                 </div>
 
@@ -42,9 +43,7 @@ window.onload = function() {
                   <div class="d-flex w-100 justify-content-between">
                     <small class="mb-1 text-white">Created</small>
                     <small class="mb-1 text-warning">${new Date(
-                      item.created).getMonth()}, ${new Date(
-                        item.created).getDay()} ${new Date(
-                          item.created).getFullYear()}</small>
+                          item.created).toDateString()}</small>
                   </div>
                 </div>
 
@@ -98,7 +97,8 @@ function getNext(url) {
               <div href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark">
                 <div class="d-flex w-100 justify-content-between">
                   <small class="mb-1 text-white">Date Released</small>
-                  <small class="mb-1 text-warning">${item.air_date}</small>
+                  <small class="mb-1 text-warning">${new Date(
+                        item.air_date).toDateString()}</small>
                 </div>
               </div>
 
@@ -121,9 +121,7 @@ function getNext(url) {
                 <div class="d-flex w-100 justify-content-between">
                   <small class="mb-1 text-white">Created</small>
                   <small class="mb-1 text-warning">${new Date(
-                    item.created).getMonth()}, ${new Date(
-                      item.created).getDay()} ${new Date(
-                        item.created).getFullYear()}</small>
+                        item.created).toDateString()}</small>
                 </div>
               </div>
 
@@ -175,7 +173,8 @@ function getPrev(url) {
               <div href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark">
                 <div class="d-flex w-100 justify-content-between">
                   <small class="mb-1 text-white">Date Released</small>
-                  <small class="mb-1 text-warning">${item.air_date}</small>
+                  <small class="mb-1 text-warning">${new Date(
+                        item.air_date).toDateString()}</small>
                 </div>
               </div>
 
@@ -197,7 +196,8 @@ function getPrev(url) {
               <div href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark">
                 <div class="d-flex w-100 justify-content-between">
                   <small class="mb-1 text-white">Created</small>
-                  <small class="mb-1 text-warning">${item.created}</small>
+                  <small class="mb-1 text-warning">${new Date(
+                        item.created).toDateString()}</small>
                 </div>
               </div>
 
